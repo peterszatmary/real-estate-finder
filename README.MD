@@ -5,14 +5,14 @@
 ## What App does
 
 - is parsing web page with real estates in Slovakia in Kosice and filter them out trying to get less links that points to real estates that are selling people not offices or companies.
-- of course there are still false positive results but number of all results is after application run possible to check manually. (4000 to XXXX )
+- of course there are still false positive results but number of all results is after application run possible to check manually.
 - false positive results happens because filtering rule is simple ( for demo purpose it is ok )
 
 ## Technical point of view
 
 - [Spring Boot](http://spring.io/projects/spring-boot) application (2.1.0)
 - Parsing with [Selenium](https://www.seleniumhq.org) with [PhantomJS Driver](http://phantomjs.org) (browser less) and [Jsoup](https://jsoup.org)
-- Spring Boot @Autowired can be avoided using thank to Spring 5 andthanks to  [Lombok](https://projectlombok.org) @AllArgsConstructor there is no need for constructor. See RealEstateService and/or RealEstateController.
+- Spring Boot @Autowired can be avoided using thank to Spring 5 andthanks to  [Lombok](https://projectlombok.org) @AllArgsConstructor there is no need for constructor. See [RealEstateService](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateService.java) and/or [RealEstateController](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateController.java).
 
 ## Result
 
