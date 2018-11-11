@@ -5,7 +5,7 @@
 ## What App does
 
 - is parsing web page with real estates in Slovakia in Kosice and filter them out trying to get less links that points to real estates that are selling people not offices or companies.
-- of course there are still false positive results but number of all results is after application run possible to check manually.
+- of course there are still false positive results but number of all results is after application run possible to check manually. Count of links are significantly lower.
 - false positive results happens because filtering rule is simple ( for demo purpose it is ok )
 
 ## Technical point of view
