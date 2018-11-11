@@ -47,6 +47,10 @@ phantomjs --version
 
 ```
 
+## Customizable
+
+- application is customisable see please [application.properties](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/resources/application.properties) file.
+
 ## Running the demo
 
 - Demo is REST application so is running in your favourite browser.
