@@ -18,7 +18,7 @@
 
 - html file with real estate links already filtered
 
-## Prerequsities
+## Prerequisites
 
 - you need to install PhantomJS Driver and Selenium
 
