@@ -1,28 +1,31 @@
-# Real Estate Finder
+# Real Estate Finder #
 
-- application is just SpringBoot Demo
+[![Build Status](https://travis-ci.org/peterszatmary/real-estate-finder.svg?branch=master)](https://travis-ci.org/peterszatmary/real-estate-finder)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/60554b5eec9b49e1a478903691161a71)](https://www.codacy.com/app/peterszatmary/real-estate-finder?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/real-estate-finder&amp;utm_campaign=Badge_Grade)
 
-## What App does
+application is just SpringBoot Demo
 
-- is parsing web page with real estates in Slovakia in Kosice and filter them out trying to get less links that points to real estates that are selling people not offices or companies.
-- of course there are still false positive results but number of all results is after application run possible to check manually. Count of links are significantly lower.
-- false positive results happens because filtering rule is simple ( for demo purpose it is ok )
+## What App does ##
 
-## Technical point of view
+-   is parsing web page with real estates in Slovakia in Kosice and filter them out trying to get less links that points to real estates that are selling people not offices or companies.
+-   of course there are still false positive results but number of all results is after application run possible to check manually. Count of links are significantly lower.
+-   false positive results happens because filtering rule is simple ( for demo purpose it is ok )
 
-- [Spring Boot](http://spring.io/projects/spring-boot) application (2.1.0)
-- Parsing with [Selenium](https://www.seleniumhq.org) with [PhantomJS Driver](http://phantomjs.org) (browser less) and [Jsoup](https://jsoup.org)
-- Spring Boot @Autowired can be avoided using thank to Spring 5 andthanks to  [Lombok](https://projectlombok.org) @AllArgsConstructor there is no need for constructor. See [RealEstateService](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateService.java) and/or [RealEstateController](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateController.java).
+## Technical point of view ##
 
-## Result
+-   [Spring Boot](http://spring.io/projects/spring-boot) application (2.1.0)
+-   Parsing with [Selenium](https://www.seleniumhq.org) with [PhantomJS Driver](http://phantomjs.org) (browser less) and [Jsoup](https://jsoup.org)
+-   Spring Boot @Autowired can be avoided using thank to Spring 5 andthanks to  [Lombok](https://projectlombok.org) @AllArgsConstructor there is no need for constructor. See [RealEstateService](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateService.java) and/or [RealEstateController](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/java/com/reality/finder/realityfinder/RealEstateController.java).
 
-- html file with real estate links already filtered
+## Result ##
 
-## Prerequisites
+html file with real estate links already filtered
 
-- you need to install PhantomJS Driver and Selenium
+## Prerequisites ##
 
-```shell
+you need to install PhantomJS Driver and Selenium
+
+```bash
 
 # selenium
 sudo apt-get install software-properties-common
@@ -47,20 +50,20 @@ phantomjs --version
 
 ```
 
-## Customizable
+## Customizable ##
 
-- application is customisable see please [application.properties](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/resources/application.properties) file.
+application is customisable see please [application.properties](https://github.com/peterszatmary/real-estate-finder/blob/master/src/main/resources/application.properties) file.
 
-## Running the demo
+## Running the demo ##
 
-- Demo is REST application so is running in your favourite browser.
-- app is running on port 8070.
-- because this is just demo application inputs are not checked.
+-   Demo is REST application so is running in your favourite browser.
+-   app is running on port 8070.
+-   because this is just demo application inputs are not checked.
 
-```shell
+```bash
 http://localhost:8070/search/13/16/5
 ```
 
-- first number is page number from (13)
-- second number is page number to (16)
-- third number is html file target postfix (5)
+-   first number is page number from (13)
+-   second number is page number to (16)
+-   third number is html file target postfix (5)
